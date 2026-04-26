@@ -1,0 +1,293 @@
+/* this is the main css for the 
+prorfolio page
+
+
+Name: Terry Valcin
+Date: 11/04/2024
+
+
+file name main.css
+*/
+
+html {
+    background-color: rgb(248, 246, 247);
+    font-family: 'Times New Roman', Times, serif;
+}
+body div{
+    background: fixed;
+    background-position: center;
+    background-color: #f9f6f2;
+    width: 960px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* this is is the header */
+header {
+    align-content: center;
+    width: 100%;
+    position:  sticky;
+    top: 0;
+    z-index: 1000;
+}
+.headerTitle{
+    background-color: rgb(176, 141, 88);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.headerTitle h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(248, 246, 247);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav ul {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header nav ul li {
+    list-style-type: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    padding-left: 50px;
+    margin-right: 50px;
+}
+header nav ul li a {
+    color: rgb(176, 141, 88);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: auto 16px;
+
+}
+header nav ul li a:hover {
+    color: wheat;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* this is the footer */
+footer address {
+    font-size: 0.75em;
+    text-align: center;
+    padding-top: 20px;
+}
+footer {
+
+    background-color: rgb(176, 141, 88);
+    color: white;
+    border: 1px solid rgb(176, 141, 88);
+ }
+ footer a {
+    color: white;
+    text-decoration: dotted;
+ }
+ footer a:hover {
+    color: rgb(176, 141, 88);
+ }
+
+
+
+/* =========================
+   Projects Section
+========================= */
+.projects {
+    padding-top: 30px;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #4b3824;
+    font-family: "Playfair Display", serif;
+}
+
+/* Grid layout */
+#projectHolder {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+/* =========================
+   Project Card
+========================= */
+.project-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Content */
+.project-content {
+    padding: 20px;
+}
+
+.project-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #6e543a;
+    font-family: "Playfair Display", serif;
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4c4134;
+    margin-bottom: 12px;
+}
+
+.project-tech {
+    font-size: 0.95rem;
+    color: #5a4936;
+    margin-bottom: 15px;
+}
+
+/* Links */
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    text-decoration: none;
+    background: rgb(176, 141, 88);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    background: rgb(150, 115, 70);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 800px) {
+    #projectHolder {
+        grid-template-columns: 1fr;
+    }
+}
+
+ /* Notification style */
+.notification {
+    background-color: rgb(248, 246, 247); /* matches page bg */
+    color: rgb(176, 141, 88); /* gold accent */
+    border: 1px solid rgb(176, 141, 88);
+    padding: 16px 24px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(176, 141, 88, 0.08);
+    text-align: center;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+    header {
+        padding-bottom: 0;
+    }
+    body div {
+        width: 100%;
+        padding: 0 5px;
+    }
+    header h1 {
+        font-size: 1.5em;
+        padding-top: 20px;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        background-color: white;
+    }
+    header nav ul li {
+        float: none;
+        display: inline-block;
+        padding-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    section.sec1 article img {
+        padding-left: 0;
+        width: 80vw;
+        height: auto;
+    }
+    /* Adjust other elements as needed */
+}
+
+.install-button {
+    background-color: rgb(176, 141, 88);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    margin: 10px 8px 0 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.install-button:hover {
+    background-color: rgb(140, 110, 60);
+    color: wheat;
+}
+
+.close-button {
+    background-color: transparent;
+    color: rgb(176, 141, 88);
+    border: 1.5px solid rgb(176, 141, 88);
+    border-radius: 6px;
+    padding: 10px 22px;
+    margin: 10px 0 0 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.close-button:hover {
+    background-color: rgb(176, 141, 88);
+    color: white;
+}

@@ -1,0 +1,131 @@
+/*this is the contact css page
+this page style the contact page
+
+Author: Terry Valcin
+Date: 11/28/2024
+
+
+
+file name: contact.csss*/
+
+h1#name {
+    text-align: center;
+    font-size: 10em;
+    color: rgb(176, 141, 88);
+    text-shadow: gray 5px 5px 10px;
+}
+
+p3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+ /* This is the Form Styles modifier.*/
+ form#cusinfo {
+    display: flex;
+    flex-flow: row wrap;
+    background-position: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+form#cusinfo > fieldset {
+    background-color: rgb(176, 141, 88);
+    border-radius: 10px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    background-position: center;
+    width: 50%;
+}
+
+div.areas {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 7px 0px;
+    background-color: transparent;
+ }
+
+div.areas > input {
+    width: 95%;
+    margin-right: 100px;
+}
+
+div#buttons {
+    background-position: center;
+    height: 10px;
+    width: 100px;
+    margin-left: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+ }
+
+ legend {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+ }
+
+.areas small {
+    visibility: hidden;
+    font-size: 15px;
+}
+
+.areas.success input{
+    border-color: #2ecc71;
+}
+.areas.success small{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.areas.error input{
+    border-color: #ff1900;
+}
+.areas.error small{
+    visibility: visible;
+    color: #ff1900;
+}
+
+@media (max-width: 600px) {
+    h1#name {
+        font-size: 2.5em;
+        padding: 10px 0;
+    }
+    p3 {
+        font-size: 1.2em;
+        padding: 0 5px;
+        display: block;
+    }
+    form#cusinfo {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    form#cusinfo > fieldset {
+        width: 95%;
+        font-size: 1em;
+        margin: 10px auto;
+        padding: 10px 5px;
+    }
+    div.areas > input,
+    textarea {
+        width: 100%;
+        margin-right: 0;
+        font-size: 1em;
+    }
+    div#buttons {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    legend {
+        font-size: 1.3em;
+    }
+}
