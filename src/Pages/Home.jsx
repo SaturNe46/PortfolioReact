@@ -9,13 +9,13 @@ function Home() {
         <article className="hero">
           <h1>Owned the website of your dream</h1>
 
-          <a href="/resume" className="profile-link">
+          <link to="/Pages/Resume" className="profile-link">
             <img
               src="/pt_profile (2).png"
               alt="Terry Valcin"
               className="profile-pic"
             />
-          </a>
+          </link>
 
           <p className="intro">
             You want a amazing website but you don’t know where to start?

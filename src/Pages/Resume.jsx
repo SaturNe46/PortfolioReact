@@ -22,7 +22,7 @@ function Resume() {
         the values, the brand, the emotions of the company while meeting the need of its users.
       </p>
 
-      <Link to="/contact">Contact Me</Link>
+      <Link to="/Pages/Contact">Contact Me</Link>
     </article>
   );
 }
