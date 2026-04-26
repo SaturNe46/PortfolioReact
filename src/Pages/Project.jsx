@@ -14,8 +14,8 @@ function Project() {
   }, []);
 
   return (
-    <section class="projects">
-        <h1 class="projects-title">My Projects</h1>
+    <section className="projects">
+        <h1 className="projects-title">My Projects</h1>
 
         <div id="projectHolder">
               {projects.map((project, index) => (
